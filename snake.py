@@ -143,7 +143,7 @@ while True:
             y = head.ycor()
             segments[0].goto(x, y)
 
-        # ✅ Check for collision with body
+        #  Check for collision with body
        for segment in segments[1:]:  # 👈 Skip the first segment (index 0)
             if head.distance(segment) < 20:
                 # Game Over Logic
